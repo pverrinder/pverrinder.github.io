@@ -3,8 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Home
+title: Bio
 ---
 
-# Home
-Nobody here but us potatoes.
+# Bio
+
+Paul Verrinder is a professor of electrical engineering, rock climber, and woodworker. This is his bio.
