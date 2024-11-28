@@ -8,4 +8,4 @@ title: Bio
 
 # Bio
 
-Paul Verrinder is a professor of electrical engineering, rock climber, and woodworker. This is his bio.
+Paul Verrinder is a professor of electrical engineering, rock climber, and woodworker.

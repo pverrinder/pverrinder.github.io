@@ -6,65 +6,120 @@
     <meta name="description" content="A notepad-like desktop application inspired by wikis.">
     <meta name="author" content="your-email@example.com">
     <title>{{ page.title }}</title>
-    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" href="/assets/temp.png">
     <style>
+        /* Global Styles */
         body, html {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #FAFAFA;
         }
+
         #wrapper {
             display: flex;
             min-height: 100vh;
         }
+
+        /* Navigation Styles */
         #navigation {
-            width: 100px;
+            width: 150px;
             background-color: #F3F3F3;
             padding: 20px;
             border-right: 1px solid #EAEAEA;
         }
+
         #navigation ul {
             list-style: none;
             padding: 0;
         }
+
         #navigation li {
             margin-bottom: 10px;
         }
+
         #navigation a {
             text-decoration: none;
             color: #555;
             font-weight: 500;
         }
+
         #navigation a:hover {
             text-decoration: underline;
         }
+
         #logo img {
             display: block;
             margin: 0 auto 20px;
             width: 80px;
         }
+
+        /* Content Styles */
         #content {
             flex-grow: 1;
             padding: 20px;
             max-width: 960px;
         }
+
         #content h1 {
             color: #4E9A06;
             font-size: 2em;
             margin-bottom: 20px;
         }
+
         #content p {
             margin: 10px 0;
         }
+
         #content a {
-            color: #CE5C00;
+            color: #0000ee;
         }
+
         p.footer {
             margin-top: 50px;
             text-align: right;
             color: gray;
             font-size: 0.9em;
+        }
+
+        /* Media Query for Mobile Screens */
+        @media (max-width: 768px) {
+            #wrapper {
+                flex-direction: column; /* Stack navigation and content vertically */
+            }
+
+            #navigation {
+                width: 100%; /* Full-width navigation */
+                border-right: none; /* Remove side border */
+                border-bottom: 1px solid #EAEAEA; /* Add bottom border */
+                padding: 10px; /* Adjust padding */
+                text-align: center; /* Center-align navigation */
+            }
+
+            #navigation ul {
+                display: flex;
+                flex-wrap: wrap; /* Allow links to wrap */
+                justify-content: center; /* Center links */
+                padding: 0;
+            }
+
+            #navigation li {
+                margin: 5px 10px; /* Adjust spacing for links */
+            }
+
+            #logo img {
+                margin: 10px auto; /* Adjust logo spacing */
+                width: 60px; /* Reduce logo size */
+            }
+
+            #content {
+                padding: 15px; /* Reduce padding for smaller screens */
+                max-width: 100%; /* Allow content to span full width */
+            }
+
+            #content h1 {
+                font-size: 1.8em; /* Slightly smaller headings */
+            }
         }
     </style>
 </head>
@@ -81,6 +136,7 @@
                 <li><a href="/bio.html">Bio</a></li>
             </ul>
         </div>
+
         <!-- Content Section -->
         <div id="content">
             {{ content }}
