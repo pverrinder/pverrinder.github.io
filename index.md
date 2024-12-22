@@ -7,4 +7,5 @@ title: Home
 ---
 
 # Home
-Nobody here but us potatoes.
+
+Welcome to my website. There's almost nothing to see here, but feel free to look around regardless.
