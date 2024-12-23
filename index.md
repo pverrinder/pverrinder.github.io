@@ -8,4 +8,6 @@ title: Home
 
 # Home
 
-Welcome to my website. There's almost nothing to see here, but feel free to look around regardless.
+Welcome to my website. There's almost nothing to see here, but feel free to look around regardless.  
+
+Take a look at my [projects page](./projects), or see what kind of books I'm [reading](./reading_list).

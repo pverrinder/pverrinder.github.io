@@ -1,0 +1,137 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FAFAFA;
+}
+
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Navigation Styles */
+#navigation {
+    width: 250px;
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-right: 1px solid #EAEAEA;
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li {
+    margin-bottom: 10px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+#navigation a:hover {
+    color: #165896;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h3 {
+    color: #165896;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #EAEAEA;
+}
+
+#logo img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 80px;
+}
+
+/* Content Styles */
+#content {
+    flex-grow: 1;
+    padding: 40px;
+    max-width: 960px;
+}
+
+#content h1 {
+    color: #165896;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#content p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#content a {
+    color: #165896;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+#content a:hover {
+    border-bottom-color: #165896;
+}
+
+p.footer {
+    margin-top: 50px;
+    text-align: right;
+    color: gray;
+    font-size: 0.9em;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    #wrapper {
+        flex-direction: column;
+    }
+
+    #navigation {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #EAEAEA;
+        padding: 15px;
+    }
+
+    .section {
+        margin-top: 20px;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navigation li {
+        margin: 5px 10px;
+    }
+
+    #logo img {
+        margin: 10px auto;
+        width: 60px;
+    }
+
+    #content {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    #content h1 {
+        font-size: 1.8em;
+    }
+}
