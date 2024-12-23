@@ -72,7 +72,7 @@ body, html {
 #content h1 {
     color: #165896;  /* Original blue color */
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
 }
 
 #content h2 {

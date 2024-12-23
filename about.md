@@ -7,5 +7,9 @@ title: About
 ---
 
 # About
+This website is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
-This is my own personal website. There is basically no theme, I've just always wanted to make my own website so I decided to take the plunge even though I don't have any real content.
+
+
+# Bio
+Paul Verrinder is a professor of electrical engineering, rock climber, and woodworker.
