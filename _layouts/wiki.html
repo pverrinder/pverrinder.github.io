@@ -1,0 +1,41 @@
+<article class="wiki-page">
+    <header class="wiki-header">
+        <h1>{{ page.title }}</h1>
+        {% if page.tags %}
+        <div class="tags">
+            {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="last-modified">
+            Last modified: {{ page.last_modified_at | date: "%B %d, %Y" }}
+        </div>
+    </header>
+
+    <div class="wiki-content">
+        {{ content }}
+    </div>
+
+    {% if page.backlinks %}
+    <section class="backlinks">
+        <h2>Pages that link here</h2>
+        <ul>
+        {% for backlink in page.backlinks %}
+            <li><a href="{{ backlink.url }}">{{ backlink.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {% if page.related %}
+    <section class="related">
+        <h2>Related pages</h2>
+        <ul>
+        {% for related in page.related %}
+            <li><a href="{{ related.url }}">{{ related.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+</article>

@@ -17,6 +17,10 @@ body, html {
     background-color: #F3F3F3;
     padding: 20px;
     border-right: 1px solid #EAEAEA;
+    position: sticky;  /* Make navigation sticky on desktop */
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;  /* Allow scrolling if content is too tall */
 }
 
 #navigation ul {
@@ -26,7 +30,7 @@ body, html {
 }
 
 #navigation li {
-    margin-bottom: 10px;
+    margin-bottom: 10px;  /* Keeping original spacing */
 }
 
 #navigation a {
@@ -37,7 +41,7 @@ body, html {
 }
 
 #navigation a:hover {
-    color: #165896;
+    color: #165896;  /* Original blue color */
 }
 
 .section {
@@ -45,9 +49,9 @@ body, html {
 }
 
 .section h3 {
-    color: #165896;
+    color: #165896;  /* Original blue color */
     font-size: 1.2em;
-    margin-bottom: 15px;
+    margin-bottom: 0.5em;
     padding-bottom: 5px;
     border-bottom: 2px solid #EAEAEA;
 }
@@ -66,9 +70,21 @@ body, html {
 }
 
 #content h1 {
-    color: #165896;
+    color: #165896;  /* Original blue color */
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
+}
+
+#content h2 {
+    color: #165896;  /* Original blue color */
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+#content h3 {
+    color: #165896;  /* Original blue color */
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
 }
 
 #content p {
@@ -77,21 +93,29 @@ body, html {
 }
 
 #content a {
-    color: #165896;
+    color: #165896;  /* Original blue color */
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
 }
 
 #content a:hover {
-    border-bottom-color: #165896;
+    border-bottom-color: #165896;  /* Original blue color */
 }
 
-p.footer {
-    margin-top: 50px;
-    text-align: right;
-    color: gray;
-    font-size: 0.9em;
+/* Mobile Navigation Toggle Button */
+.nav-toggle {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 10px;
+    background: #165896;  /* Matching the site's blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Media Query for Mobile Screens */
@@ -100,15 +124,22 @@ p.footer {
         flex-direction: column;
     }
 
-    #navigation {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #EAEAEA;
-        padding: 15px;
+    .nav-toggle {
+        display: block;
     }
 
-    .section {
-        margin-top: 20px;
+    #navigation {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+        padding-top: 60px;  /* Space for close button */
+    }
+
+    #navigation.active {
+        transform: translateX(0);
     }
 
     #navigation ul {
@@ -118,20 +149,29 @@ p.footer {
     }
 
     #navigation li {
-        margin: 5px 10px;
+        margin: 5px 10px;  /* Original mobile spacing */
     }
 
     #logo img {
-        margin: 10px auto;
         width: 60px;
+        margin: 10px auto;
     }
 
     #content {
         padding: 20px;
+        margin-top: 60px;  /* Space for fixed navigation toggle */
         max-width: 100%;
     }
 
     #content h1 {
         font-size: 1.8em;
     }
+}
+
+.corner-text {
+    font-size: 0.5em;
+    text-align: left;      /* Changed from right to left */
+    color: #777;
+    margin-top: 80px;      /* Push it down further */
+    margin-bottom: 0;      /* Remove bottom margin */
 }

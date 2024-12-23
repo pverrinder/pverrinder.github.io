@@ -3,7 +3,13 @@ layout: default
 title: Projects
 ---
 
-# Projects
+## Current Projects
+*Coming soon*
 
-Nobody here but us potatoes.
+## Past Projects
+*Coming soon*
 
+
+
+
+<p class="corner-text">Nobody here but us potatoes.</p>

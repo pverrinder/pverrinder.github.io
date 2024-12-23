@@ -11,6 +11,9 @@
 </head>
 <body>
     <div id="wrapper">
+
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
         <!-- Navigation Section -->
         <div id="navigation">
             <div id="logo">
@@ -19,15 +22,18 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/bio">Bio</a></li>
-                <li><a href="/reading_list">Reading List</a></li>
+                <li><a href="/reading_list">Reading List 📚</a></li>
+                <!-- <li><a href="/reading_list"><h3>📚 Reading List</h3></a></li> -->
             </ul>
 
 
+            <!-- 🌱 -->
             <div class="section">
                 <ul>
-                    <li><a href="/projects/"><h3>🌱 Projects</h3></a></li>
+                    <li><a href="/projects/"><h3>Projects</h3></a></li>
                 </ul>
             </div>
+
 
 
         </div>
@@ -37,5 +43,12 @@
             {{ content }}
         </div>
     </div>
+    <!-- JavaScript goes right before the closing body tag -->
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('#navigation').classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
