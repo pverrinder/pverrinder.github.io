@@ -25,11 +25,26 @@ description: >- # this means to ignore newlines until "baseurl:"
 #baseurl: "/paulverrinder" # the subpath of your site, e.g. /blog
 url: "https://github.com/pverrinder/pverrinder.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-exclude: ["_site", "Gemfile", "Gemfile.lock"]
+#exclude: ["_site", "Gemfile", "Gemfile.lock"]
 
 collections:
   projects:
     output: true
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+
 
   #reading:
   #  output: true
@@ -55,8 +70,7 @@ collections:
 
 # Build settings
 #theme: minima
-#plugins:
-#  - jekyll-feed
+
 
 
 # Exclude from processing.
