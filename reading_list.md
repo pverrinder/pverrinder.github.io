@@ -10,6 +10,7 @@ List of books I have read, am currently reading, or plan to read. I only started
 - [ ] *The Idiot*, Fyodor Dostoevsky
 
 ## 2024
+- [x] *The Great Divorce*, C.S. Lewis
 - [x] *The Four Loves*, C.S. Lewis
 - [x] *1984*, George Orwell
 - [x] *John Adams*, David McCullough
