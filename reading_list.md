@@ -7,7 +7,8 @@ title: Reading List
 List of books I have read, am currently reading, or plan to read. I only started keeping track at the end of 2023 and I'm not going to try to rememeber everything I read before that. My goal for 2025 and beyond is to average about one book per month. 
 
 ## 2025
-- [ ] *The Idiot*, Fyodor Dostoevsky
+- [x] *The Elements of Style, 4th Edition*, William Strunk Jr. & E.B. White
+- [x] *The Wingfeather Saga, Book 1*, Andrew Peterson
 
 ## 2024
 - [x] *The Great Divorce*, C.S. Lewis
