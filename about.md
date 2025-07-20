@@ -12,4 +12,4 @@ This website is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub
 
 
 # Bio
-Paul Verrinder is a professor of electrical engineering, rock climber, and woodworker, musician, husband and father of two.
+Paul Verrinder is an integrated photonics researcher and professor of electrical engineering, rock climber, woodworker, musician, husband, and father of two.
