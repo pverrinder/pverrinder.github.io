@@ -13,6 +13,8 @@ List of books I have read, am currently reading, or plan to read. I only started
 - [x] *The Wingfeather Saga, Book 3*, Andrew Peterson
 - [x] *The Wingfeather Saga, Book 4*, Andrew Peterson
 - [x] *The Weight of Glory*, C.S. Lewis
+- [x] *Habits of the Household*, Justin Whitmel Earley
+- [ ] *Confessions*, St. Augustine
 - [ ] *The Idiot*, Fyodor Dostoevsky
 
 ## 2024
