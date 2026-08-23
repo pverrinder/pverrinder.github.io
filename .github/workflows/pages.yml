@@ -1,0 +1,65 @@
+# Builds the site with the Jekyll version pinned in this repo's Gemfile
+# (rather than the older version GitHub's built-in "classic" build uses)
+# and publishes it to GitHub Pages.
+#
+# Requires: Settings -> Pages -> Source set to "GitHub Actions".
+name: Deploy site to Pages
+
+on:
+  # Rebuild on every push to main
+  push:
+    branches:
+      - main
+  # Allow a manual rebuild from the Actions tab
+  workflow_dispatch:
+
+# Permissions the deploy step needs
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# If two pushes land close together, let the first finish rather than
+# cancelling it - a cancelled deploy can leave the site half-updated.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Install Ruby and gems from the Gemfile
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true   # runs bundle install and caches the gems
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      # No --baseurl flag on purpose: the site is served from the apex
+      # domain paulverrinder.com (see the CNAME file), and url is already
+      # set in _config.yml.
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload the built site
+        uses: actions/upload-pages-artifact@v3
+        # defaults to uploading ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

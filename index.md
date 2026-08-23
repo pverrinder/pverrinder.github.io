@@ -10,4 +10,4 @@ title: Home
 
 Welcome to my website. There's almost nothing to see here, but feel free to look around regardless.  
 
-Take a look at my [projects page](./projects), or see what kind of books I'm [reading](./reading_list).
+Take a look at my [projects](./projects), read some of my [writing](./writing), or see what kind of books I'm [reading](./reading_list).
