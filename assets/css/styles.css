@@ -1,0 +1,181 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #FAFAFA;
+}
+
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Navigation Styles */
+#navigation {
+    width: 250px;
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-right: 1px solid #EAEAEA;
+    position: sticky;  /* Make navigation sticky on desktop */
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;  /* Allow scrolling if content is too tall */
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li {
+    margin-bottom: 10px;  /* Keeping original spacing */
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+#navigation a:hover {
+    color: #165896;  /* Original blue color */
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h3 {
+    color: #165896;  /* Original blue color */
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #EAEAEA;
+}
+
+#logo img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 80px;
+}
+
+/* Content Styles */
+#content {
+    flex-grow: 1;
+    padding: 40px;
+    max-width: 700px;
+}
+
+#content h1 {
+    color: #165896;  /* Original blue color */
+    font-size: 2em;
+    margin-bottom: 0.75em;
+}
+
+#content h2 {
+    color: #165896;  /* Original blue color */
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+#content h3 {
+    color: #165896;  /* Original blue color */
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+#content p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#content li {
+    line-height: 1.6;
+}
+
+#content a {
+    color: #165896;  /* Original blue color */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+#content a:hover {
+    border-bottom-color: #165896;  /* Original blue color */
+}
+
+/* Mobile Navigation Toggle Button */
+.nav-toggle {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 10px;
+    background: #165896;  /* Matching the site's blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    #wrapper {
+        flex-direction: column;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    #navigation {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+        padding-top: 60px;  /* Space for close button */
+    }
+
+    #navigation.active {
+        transform: translateX(0);
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navigation li {
+        margin: 5px 10px;  /* Original mobile spacing */
+    }
+
+    #logo img {
+        width: 60px;
+        margin: 10px auto;
+    }
+
+    #content {
+        padding: 20px;
+        margin-top: 60px;  /* Space for fixed navigation toggle */
+        max-width: 100%;
+    }
+
+    #content h1 {
+        font-size: 1.8em;
+    }
+}
+
+.corner-text {
+    font-size: 0.5em;
+    text-align: left;      /* Changed from right to left */
+    color: #777;
+    margin-top: 80px;      /* Push it down further */
+    margin-bottom: 0;      /* Remove bottom margin */
+}
