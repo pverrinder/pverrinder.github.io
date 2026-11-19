@@ -30,7 +30,7 @@ body, html {
 }
 
 #navigation li {
-    margin-bottom: 10px;  /* Keeping original spacing */
+    margin-bottom: 10px;
 }
 
 #navigation a {
@@ -41,19 +41,7 @@ body, html {
 }
 
 #navigation a:hover {
-    color: #165896;  /* Original blue color */
-}
-
-.section {
-    margin-top: 30px;
-}
-
-.section h3 {
-    color: #165896;  /* Original blue color */
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #EAEAEA;
+    color: #165896;
 }
 
 #logo img {
@@ -70,19 +58,19 @@ body, html {
 }
 
 #content h1 {
-    color: #165896;  /* Original blue color */
+    color: #165896;  /* the site's blue, used for headings and links */
     font-size: 2em;
     margin-bottom: 0.75em;
 }
 
 #content h2 {
-    color: #165896;  /* Original blue color */
+    color: #165896;
     font-size: 1.5em;
     margin-bottom: 0.75em;
 }
 
 #content h3 {
-    color: #165896;  /* Original blue color */
+    color: #165896;
     font-size: 1.25em;
     margin-bottom: 0.5em;
 }
@@ -97,14 +85,14 @@ body, html {
 }
 
 #content a {
-    color: #165896;  /* Original blue color */
+    color: #165896;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
 }
 
 #content a:hover {
-    border-bottom-color: #165896;  /* Original blue color */
+    border-bottom-color: #165896;
 }
 
 /* Mobile Navigation Toggle Button */
@@ -115,7 +103,7 @@ body, html {
     right: 10px;
     z-index: 1000;
     padding: 10px;
-    background: #165896;  /* Matching the site's blue */
+    background: #165896;
     color: white;
     border: none;
     border-radius: 4px;
@@ -153,7 +141,7 @@ body, html {
     }
 
     #navigation li {
-        margin: 5px 10px;  /* Original mobile spacing */
+        margin: 5px 10px;
     }
 
     #logo img {
@@ -174,8 +162,8 @@ body, html {
 
 .corner-text {
     font-size: 0.5em;
-    text-align: left;      /* Changed from right to left */
+    text-align: left;
     color: #777;
-    margin-top: 80px;      /* Push it down further */
-    margin-bottom: 0;      /* Remove bottom margin */
+    margin-top: 80px;
+    margin-bottom: 0;
 }

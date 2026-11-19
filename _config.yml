@@ -5,13 +5,4 @@ description: "Assistant Professor at Aalto University, integrated photonics"
 url: "https://paulverrinder.com"
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
-
-# Excluded from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - 0_drafts
