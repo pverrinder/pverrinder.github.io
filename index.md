@@ -11,3 +11,5 @@ Check the links below for more details.
 - [Department page](https://www.aalto.fi/en/department-of-electronics-and-nanoengineering/integrated-photonics)
 - [Google Scholar](https://scholar.google.com/citations?user=GMHFwCMAAAAJ&hl=en)
 - [ORCID](https://orcid.org/0000-0003-3215-4509)
+
+This website is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
